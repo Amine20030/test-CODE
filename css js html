@@ -1,0 +1,11 @@
+<!-- HTML snippet for the Specials tile -->
+<a href="#" onclick="loadRandomCategory();">Specials</a>
+
+<script>
+function loadRandomCategory() {
+  const categories = ["Lunch", "Dinner", "Sushi", "Drinks", "Desserts"];
+  const randomIndex = Math.floor(Math.random() * categories.length);
+  const randomCategoryShortName = categories[randomIndex];
+  $dc.loadMenuItems(randomCategoryShortName);
+}
+</script>
